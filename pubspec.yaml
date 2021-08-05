@@ -1,0 +1,52 @@
+name: flavorization_app_theme
+description: A project wich explain how to differentiate ui component based on different flavors.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.3
+  adaptive_theme: ^2.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_flavorizr: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+flavorizr:
+  app:
+    android:
+      flavorDimensions: "app"
+
+  flavors:
+    flavor1:
+      app:
+        name: "Flavor 1"
+      android:
+        applicationId: "com.dontpaniccompany.flavor1"
+        generateDummyAssets: true
+      ios:
+        bundleId: "com.dontpaniccompany.flavor1"
+        generateDummyAssets: true
+        launchScreen: true
+    flavor2:
+      app:
+        name: "Flavor 2"
+      android:
+        applicationId: "com.dontpaniccompany.flavor2"
+        generateDummyAssets: true
+      ios:
+        bundleId: "com.dontpaniccompany.flavor2"
+        generateDummyAssets: true
+        launchScreen: true

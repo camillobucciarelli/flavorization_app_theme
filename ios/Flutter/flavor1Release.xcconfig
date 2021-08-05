@@ -1,0 +1,6 @@
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main-flavor1.dart
+
+ASSET_PREFIX=flavor1
+BUNDLE_NAME=Flavor 1
