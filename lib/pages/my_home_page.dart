@@ -1,4 +1,5 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
+import 'package:flavorization_app_theme/environments.dart';
 import 'package:flavorization_app_theme/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
 
@@ -43,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(
-              'Hello ${FlavorStyle.title}'
+              'Hello ${FlavorStyle.title} on env: ${Environment.env}'
             ),
             Padding(padding: EdgeInsets.all(FlavorStyle.dimens.padding),child: CustomButton(onTap: () {}, label: 'Button label'))
           ],
